@@ -29,13 +29,13 @@ formEl.addEventListener('submit', function (e) {
   targetAge.innerHTML = ageEl.value
 
   if (ageEl.value < 18) {    
-    targetPrice.innerHTML = discountUnder.toFixed(2);
+    targetPrice.innerHTML = discountUnder.toFixed(2) +' '+ 'euro';
 
   } else if (ageEl.value > 65) {    
-    targetPrice.innerHTML = discontOver.toFixed(2);
+    targetPrice.innerHTML = discontOver.toFixed(2) +' '+ 'euro';
   } else {
     
-    targetPrice.innerHTML = price.toFixed(2);
+    targetPrice.innerHTML = price.toFixed(2) +' '+ 'euro';
   }
 
 })
