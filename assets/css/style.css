@@ -1,0 +1,19 @@
+body{
+  background-color: brown;
+
+  header{
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    
+  }
+
+  .container-md{
+    background-color: white;
+    padding: 3rem;
+    border-radius: 8px;
+    color: brown;
+    font-weight: 700;
+    
+  }
+}

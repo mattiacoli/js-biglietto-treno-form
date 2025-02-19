@@ -13,18 +13,59 @@
 </head>
 
 <body>
-  <div class="container-xl mt-3">
+
+  <header>
+    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+  </header>
+
+  <div class="container-md mt-3">
+
+    <!-- Form -->
     <form action="#" id="ticket-form">
-      <input id="distance" type="text" placeholder="type the distance in km">
-      <input id="age" type="text" placeholder="type your age">
-      <button class="btn btn-primary"  type="submit">Invia</button>
+      <div class="row">
+        <!-- Name -->
+        <div class="col">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" id="name" aria-describedby="NameHelpId"
+              placeholder="type your name" />
+
+          </div>
+        </div>
+
+        <!-- distance -->
+        <div class="col">
+          <label for="distance" class="form-label">Km </label>
+          <input type="number" class="form-control" name="distance" id="distance" aria-describedby="distanceHelpId"
+            placeholder="type distance in km" />
+
+        </div>
+
+        <!-- age -->
+        <div class="col">
+          <label for="age" class="form-label">Age</label>
+          <input type="text" class="form-control" name="age" id="age" aria-describedby="ageHelpId"
+            placeholder="type your age" />
+
+        </div>
+
+
+        <button class="btn btn-danger mt-3 " type="submit">Invia</button>
+      </div>
+
     </form>
 
-    <div class="target">
-      <div class="distance"></div>
-      <div class="age"></div>
-      <div class="price"></div>
-    </div>
+
+  </div>
+
+
+
+  <!-- ticket -->
+  <div class="target">
+    <div class="distance"></div>
+    <div class="age"></div>
+    <div class="price"></div>
+  </div>
   </div>
 
 
