@@ -11,7 +11,8 @@ console.log(distanceEl, ageEl, buttonEl);
 
 // add event listener to button for print result in console
 buttonEl.addEventListener('click', function () {
-
+  console.log(distanceEl.value, ageEl.value);
+  
   // get variable for price and discounts to be applied
   const price = distanceEl.value * 0.21
   const discountUnder = price * 0.2
@@ -23,8 +24,7 @@ buttonEl.addEventListener('click', function () {
   } else if (ageEl.value > 65){
     console.log(discontOver.toFixed(2));    
   } else {
-    console.log(price.toFixed(2));
-    
+    console.log(price.toFixed(2));    
   }
   
 })
