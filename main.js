@@ -25,7 +25,7 @@ formEl.addEventListener('submit', function (e) {
   const discountUnder = price * 0.2
   const discontOver = price * 0.4
   targetPassenger.innerHTML=nameEl.value
-  targetDistance.innerHTML = distanceEl.value
+  targetDistance.innerHTML = distanceEl.value + ' ' + 'km'
   targetAge.innerHTML = ageEl.value
 
   if (ageEl.value < 18) {    
