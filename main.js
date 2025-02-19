@@ -3,12 +3,16 @@ const formEl = document.getElementById('ticket-form')
 const distanceEl = document.getElementById('distance')
 const ageEl = document.getElementById('age')
 const buttonEl = document.querySelector('button')
+const nameEl = document.getElementById('name')
+
+
 
 
 // select target element
-const targetDistance = document.querySelector('.target .distance')
-const targetAge = document.querySelector('.target .age')
-const targetPrice = document.querySelector('.target .price')
+const targetPassenger = document.querySelector('.ticket-info .name-passenger')
+const targetDistance = document.querySelector('.ticket-info .distance')
+const targetAge = document.querySelector('.ticket-info .age')
+const targetPrice = document.querySelector('.ticket-info .price')
 
 
 
@@ -20,7 +24,7 @@ formEl.addEventListener('submit', function (e) {
   const price = distanceEl.value * 0.21
   const discountUnder = price * 0.2
   const discontOver = price * 0.4
-
+  targetPassenger.innerHTML=nameEl.value
   targetDistance.innerHTML = distanceEl.value
   targetAge.innerHTML = ageEl.value
 
